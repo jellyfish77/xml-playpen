@@ -38,7 +38,7 @@
 			<enumeration value="F" />
 		</restriction>
 	</simpleType>
-
+	
 	<simpleType name="RunningTimeType" final="restriction">
 		<annotation>
 			<documentation>
