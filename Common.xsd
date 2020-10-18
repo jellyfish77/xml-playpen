@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://github.com/jellyfish77/Common"
+	xmlns:com="http://github.com/jellyfish77/Common" elementFormDefault="qualified">
+
+	<simpleType name="dateTimeWithTimezone">
+		<annotation>
+			<documentation>
+				Must contain a time zone as an offset or 'Z'
+				Examples
+				2014-12-31T13:00Z
+				(which means UTC time zone which would equate to
+				9pm AWST (+08:00) or
+				UTC+8)
+				or
+				2014-12-31T21:00:00+08:00
+				These two
+				examples are the same dateTime with different locations being
+				recorded
+			</documentation>
+		</annotation>
+		<restriction base="dateTime">
+			<pattern value=".+T.+(Z|[+-].+)" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="SexType" final="restriction">
+		<annotation>
+			<documentation>
+				I would recommend using an extension of NMTOKEN, though, rather than
+				String. It's more consist with the idea of an enum, I think. It's
+				also more tool-friendly, particularly with code generators. –
+				skaffman Aug 7 '09 at 8:55
+			</documentation>
+		</annotation>
+		<restriction base="NMTOKEN">
+			<enumeration value="M" />
+			<enumeration value="F" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="RunningTimeType" final="restriction">
+		<annotation>
+			<documentation>
+				TBA
+			</documentation>
+		</annotation>
+		<restriction base="time">
+        	<pattern value="((0[0-9]|1[0-9]|2[0-3]):[0|3][0]:[0][0])"/>
+		</restriction>
+	</simpleType>
+
+</schema>

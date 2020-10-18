@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.otto.org/Media"
-	xmlns:med="http://www.otto.org/Media" elementFormDefault="qualified">
+	targetNamespace="http://github.com/jellyfish77/Media"
+	xmlns:med="http://github.com/jellyfish77/Media" elementFormDefault="qualified">
 
 	<simpleType name="TitleType">
 		<restriction base="string">

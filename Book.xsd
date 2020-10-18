@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.otto.org/Book"
-	xmlns:boo="http://www.otto.org/Book"
+	targetNamespace="http://github.com/jellyfish77/Book"
+	xmlns:boo="http://github.com/jellyfish77/Book"
 	elementFormDefault="qualified">
 
 	<import></import>

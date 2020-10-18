@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.otto.org/Movie"
-	xmlns:mov="http://www.otto.org/Movie" elementFormDefault="qualified"
-	xmlns:med="http://www.otto.org/Media"
-	xmlns:cmn="http://www.otto.org/Common">
+	targetNamespace="http://github.com/jellyfish77/Movie"
+	xmlns:mov="http://github.com/jellyfish77/Movie"
+    elementFormDefault="qualified"
+	xmlns:med="http://github.com/jellyfish77/Media"
+	xmlns:cmn="http://github.com/jellyfish77/Common">
 
 	<import schemaLocation="Media.xsd"
-		namespace="http://www.otto.org/Media"></import>
+		namespace="http://github.com/jellyfish77/Media"></import>
 
 	<import schemaLocation="Common.xsd"
-		namespace="http://www.otto.org/Common"></import>
-	
+		namespace="http://github.com/jellyfish77/Common"></import>
+
 	<complexType name="DirectorType">
 		<annotation>
 			<documentation>
@@ -18,9 +19,9 @@
 			</documentation>
 		</annotation>
 		<sequence>
-			<element name="FirstName" type="string" minOccurs="1"/>
-			<element name="LastName" type="string" minOccurs="1"/>
-			<element name="Sex" type="cmn:SexType" minOccurs="0"/>
+			<element name="FirstName" type="string" minOccurs="1" />
+			<element name="LastName" type="string" minOccurs="1" />
+			<element name="Sex" type="cmn:SexType" minOccurs="0" />
 		</sequence>
 	</complexType>
 
@@ -29,6 +30,7 @@
 			<extension base="med:MediaType">
 				<sequence>
 					<element name="Director" type="mov:DirectorType" />
+					<element name="RunningTime" type="cmn:RunningTimeType" />
 				</sequence>
 			</extension>
 		</complexContent>
