@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.otto.org/Book"
+	xmlns:tns="http://www.otto.org/Book"
+	elementFormDefault="qualified">
+
+	<import></import>
+	<element name="Title">
+		<simpleType>
+			<restriction base="string">
+				<minLength value="1"></minLength>
+				<maxLength value="30"></maxLength>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name="Author" type="string"></element>
+
+	<element name="ReleaseDate" type="string"></element>
+
+</schema>

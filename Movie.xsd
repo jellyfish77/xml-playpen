@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.otto.org/Movie"
+	xmlns:mov="http://www.otto.org/Movie"
+	elementFormDefault="qualified" xmlns:med="http://www.otto.org/Media">
+
+	<import schemaLocation="Media.xsd" namespace="http://www.otto.org/Media"></import>
+	
+	<element name="Movie" type="med:MediaType"></element>	
+	
+</schema>

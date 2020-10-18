@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.otto.org/Media"
+	xmlns:med="http://www.otto.org/Media" elementFormDefault="qualified">
+
+	<simpleType name="TitleType">
+		<restriction base="string">
+			<minLength value="1" />
+			<maxLength value="20" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="SubTitleType">
+		<restriction base="string"></restriction>
+	</simpleType>
+
+	<simpleType name="AuthorType">
+		<restriction base="string"></restriction>
+	</simpleType>
+
+	<complexType name="AuthorListType">
+		<sequence>
+			<element name="Author" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="MediaType">
+		<sequence>
+			<element name="Title" type="med:TitleType"></element>		
+		</sequence>	
+	</complexType>
+	
+</schema> 
