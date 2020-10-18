@@ -11,23 +11,19 @@
 	</simpleType>
 
 	<simpleType name="SubTitleType">
-		<restriction base="string"></restriction>
+		<restriction base="string">
+			<minLength value="1" />
+		</restriction>
 	</simpleType>
 
-	<simpleType name="AuthorType">
-		<restriction base="string"></restriction>
-	</simpleType>
 
-	<complexType name="AuthorListType">
-		<sequence>
-			<element name="Author" maxOccurs="unbounded"></element>
-		</sequence>
-	</complexType>
-	
 	<complexType name="MediaType">
 		<sequence>
-			<element name="Title" type="med:TitleType"></element>		
-		</sequence>	
+			<element name="Title" type="med:TitleType"></element>
+			<element name="SubTitle" type="med:SubTitleType"
+				minOccurs="0"></element>
+
+		</sequence>
 	</complexType>
-	
+
 </schema> 

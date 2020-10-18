@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Publication" xmlns:tns="http://www.example.org/Publication" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/Publication"
+	xmlns:tns="http://www.example.org/Publication"
+	elementFormDefault="qualified">
+
+	<simpleType name="AuthorType">
+		<restriction base="string"></restriction>
+	</simpleType>
+
+	<complexType name="AuthorListType">
+		<sequence>
+			<element name="Author" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+	
 </schema>

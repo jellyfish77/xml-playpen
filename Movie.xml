@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mov:Movie xmlns:med="http://www.otto.org/Media" xmlns:mov="http://www.otto.org/Movie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.otto.org/Movie Movie.xsd ">
+<mov:Movie xmlns:com="http://www.otto.org/Common" xmlns:med="http://www.otto.org/Media" xmlns:mov="http://www.otto.org/Movie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.otto.org/Movie Movie.xsd ">
   <med:Title>med:Title</med:Title>
+  <med:SubTitle>med:SubTitle</med:SubTitle>
+  <mov:Director>
+    <mov:FirstName>mov:FirstName</mov:FirstName>
+    <mov:LastName>mov:LastName</mov:LastName>
+    <mov:Sex>M</mov:Sex>
+  </mov:Director>
 </mov:Movie>
